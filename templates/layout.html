@@ -15,10 +15,11 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav">
-                    <a href="#" class="nav-item nav-link active">Home</a>
-                    <a href="#" class="nav-item nav-link">About</a>
-                    <a href="#" class="nav-item nav-link">Projects</a>
-                    <a href="#" class="nav-item nav-link">Contact</a>
+                    <a href="{{ url_for('home') }}" class="nav-item nav-link active">Home</a>
+                    <a href="{{ url_for('about') }}" class="nav-item nav-link">About</a>
+                    <a href="{{ url_for('resume') }}" class="nav-item nav-link">Resume</a>
+                    <a href="{{ url_for('projects') }}" class="nav-item nav-link">Projects</a>
+                    <a href="{{ url_for('contact') }}" class="nav-item nav-link">Contact</a>
                 </div>
                 <div class="navbar-nav ms-auto">
                     <a href="#" class="nav-item nav-link">Register</a>
