@@ -1,1 +1,40 @@
 {% extends "layout.html" %}
+
+{% block content %}
+<!-- <br>
+<div class="jumbotron">
+    <h1 class="display-4">Roy Chapman</h1>
+    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+    <hr class="my-4">
+    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </p>
+</div> -->
+
+<br>
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-8">
+            <h1>Roy Chapman</h1>
+            <h4>
+                <i>The Short</i>
+            </h4>
+            <p>
+                My name is Roy Chapman, I graduated from the University of Washington in 2019 with a major in Business 
+                Finance with a minor in Informatics. After leaving the univesity I accepted a position at 
+                <a href="https://pitchbook.com/">PitchBook Data</a> as a Data Operations Associate for the Investors and
+                Service Provider datasets.
+            </p>
+            <p>
+                As as Data Operations Associate I 
+            </p>
+        </div> 
+        <div class="col-md-4">
+            <image class="profilephoto" src={{ url_for('static',  filename='profile_photo.jpeg')}}></image>
+        </div> 
+    </div>
+
+</div>
+
+{% endblock content %}
